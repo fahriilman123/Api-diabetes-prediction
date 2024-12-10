@@ -2,4 +2,3 @@ Flask
 hpelm
 numpy
 pandas
-scikit-learn

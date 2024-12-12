@@ -1,8 +1,9 @@
-from flask import Flask,request,jsonify
+from flask import Flask, request, jsonify
 import hpelm
 import numpy as np
 import pickle
 import pandas as pd
+import os
 
 # Load model dan scaler
 model = hpelm.ELM(16, 2)  # Sesuaikan dimensi input dan output
@@ -44,4 +45,6 @@ def predict():
         return jsonify({"error": str(e)}), 400
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    # Gunakan PORT yang disediakan oleh lingkungan, default ke 5000 jika tidak ada
+    port = int(os.environ.get('PORT', 5000))
+    app.run(debug=True, host='0.0.0.0', port=port)

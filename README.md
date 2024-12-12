@@ -17,4 +17,4 @@ API ini menerima data dalam format JSON dengan berbagai parameter kesehatan, sep
 
 1. **Clone repository ini:**
    ```bash
-   git clone https://github.com/username/repository-name.git
+   https://github.com/fahriilman123/Api-diabetes-prediction.git

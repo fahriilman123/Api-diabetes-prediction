@@ -3,4 +3,4 @@ gunicorn
 hpelm
 numpy
 pandas
-sklearn
+scikit-learn
